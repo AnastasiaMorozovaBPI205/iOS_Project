@@ -3,16 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5D84478127E0B9D000A9E3D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D84478027E0B9D000A9E3D0 /* AppDelegate.swift */; };
 		5D84478327E0B9D000A9E3D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D84478227E0B9D000A9E3D0 /* SceneDelegate.swift */; };
 		5D84478527E0B9D000A9E3D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D84478427E0B9D000A9E3D0 /* ViewController.swift */; };
-		5D84478827E0B9D000A9E3D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D84478627E0B9D000A9E3D0 /* Main.storyboard */; };
 		5D84478A27E0B9D100A9E3D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D84478927E0B9D100A9E3D0 /* Assets.xcassets */; };
 		5D84478D27E0B9D100A9E3D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D84478B27E0B9D100A9E3D0 /* LaunchScreen.storyboard */; };
+		5D84479627E0B9FC00A9E3D0 /* Keyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 5D84479527E0B9FC00A9E3D0 /* Keyboard */; };
+		5D84479927E0BA2A00A9E3D0 /* TestPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 5D84479827E0BA2A00A9E3D0 /* TestPackage */; };
+		5D84479B27E0BA8100A9E3D0 /* HEXExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D84479A27E0BA8100A9E3D0 /* HEXExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,10 @@
 		5D84478027E0B9D000A9E3D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D84478227E0B9D000A9E3D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5D84478427E0B9D000A9E3D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5D84478727E0B9D000A9E3D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D84478927E0B9D100A9E3D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D84478C27E0B9D100A9E3D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D84478E27E0B9D100A9E3D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D84479A27E0BA8100A9E3D0 /* HEXExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HEXExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D84479627E0B9FC00A9E3D0 /* Keyboard in Frameworks */,
+				5D84479927E0BA2A00A9E3D0 /* TestPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,10 +63,10 @@
 				5D84478027E0B9D000A9E3D0 /* AppDelegate.swift */,
 				5D84478227E0B9D000A9E3D0 /* SceneDelegate.swift */,
 				5D84478427E0B9D000A9E3D0 /* ViewController.swift */,
-				5D84478627E0B9D000A9E3D0 /* Main.storyboard */,
 				5D84478927E0B9D100A9E3D0 /* Assets.xcassets */,
 				5D84478B27E0B9D100A9E3D0 /* LaunchScreen.storyboard */,
 				5D84478E27E0B9D100A9E3D0 /* Info.plist */,
+				5D84479A27E0BA8100A9E3D0 /* HEXExtension.swift */,
 			);
 			path = DemoProject;
 			sourceTree = "<group>";
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = DemoProject;
+			packageProductDependencies = (
+				5D84479527E0B9FC00A9E3D0 /* Keyboard */,
+				5D84479827E0BA2A00A9E3D0 /* TestPackage */,
+			);
 			productName = DemoProject;
 			productReference = 5D84477D27E0B9D000A9E3D0 /* DemoProject.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +118,10 @@
 				Base,
 			);
 			mainGroup = 5D84477427E0B9D000A9E3D0;
+			packageReferences = (
+				5D84479427E0B9FC00A9E3D0 /* XCRemoteSwiftPackageReference "KeyboardPackageProject" */,
+				5D84479727E0BA2A00A9E3D0 /* XCRemoteSwiftPackageReference "TestPackageProject" */,
+			);
 			productRefGroup = 5D84477E27E0B9D000A9E3D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +138,6 @@
 			files = (
 				5D84478D27E0B9D100A9E3D0 /* LaunchScreen.storyboard in Resources */,
 				5D84478A27E0B9D100A9E3D0 /* Assets.xcassets in Resources */,
-				5D84478827E0B9D000A9E3D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,20 +151,13 @@
 				5D84478527E0B9D000A9E3D0 /* ViewController.swift in Sources */,
 				5D84478127E0B9D000A9E3D0 /* AppDelegate.swift in Sources */,
 				5D84478327E0B9D000A9E3D0 /* SceneDelegate.swift in Sources */,
+				5D84479B27E0BA8100A9E3D0 /* HEXExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5D84478627E0B9D000A9E3D0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D84478727E0B9D000A9E3D0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5D84478B27E0B9D100A9E3D0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -339,6 +343,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D84479427E0B9FC00A9E3D0 /* XCRemoteSwiftPackageReference "KeyboardPackageProject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AnastasiaMorozovaBPI205/KeyboardPackageProject";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5D84479727E0BA2A00A9E3D0 /* XCRemoteSwiftPackageReference "TestPackageProject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AnastasiaMorozovaBPI205/TestPackageProject";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D84479527E0B9FC00A9E3D0 /* Keyboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D84479427E0B9FC00A9E3D0 /* XCRemoteSwiftPackageReference "KeyboardPackageProject" */;
+			productName = Keyboard;
+		};
+		5D84479827E0BA2A00A9E3D0 /* TestPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D84479727E0BA2A00A9E3D0 /* XCRemoteSwiftPackageReference "TestPackageProject" */;
+			productName = TestPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D84477527E0B9D000A9E3D0 /* Project object */;
 }
